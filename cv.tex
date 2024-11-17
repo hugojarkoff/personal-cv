@@ -1,0 +1,247 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+
+\usepackage{fontawesome}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks,pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{eurosym}
+\usepackage{xcolor}
+\usepackage{xfrac}
+\usepackage{vwcol} 
+\usepackage{adjustbox}
+\definecolor{myBlue}{rgb}{0,0,0.55}
+
+
+\hypersetup{
+    urlcolor = {[rgb]{0,0,0}}
+}
+
+\newcommand\dunderline[3][-1pt]{{%
+  \sbox0{#3}%
+  \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\usepackage{geometry}
+\geometry{top=0.6cm, bottom=0.5cm, left=0.5cm, right=0.5cm}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-1pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2\vspace{-0.8pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1.15pt}
+  \small
+  \item
+    \begin{tabular*}{0.97\textwidth}{l @{\extracolsep{\fill}}r}
+      \normalsize{\textbf{#1}}   & #2 \\
+      \small{#3} & #4 \\
+    \end{tabular*}
+  \vspace{1.5pt}
+}
+
+\def\Plus{\texttt{+}}
+
+% -------- ORIGINAL ------------
+
+\newcommand{\resumeSubItem}[2]{
+    \small{\resumeItem{#1}{#2}\vspace{-4pt}}
+	}
+
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+
+\newcommand{\resumeProjectListStart}{\begin{minipage}{0.97\textwidth} 
+                                     \begin{itemize}[leftmargin=5mm]
+                                     \vspace{1.5pt}}
+\newcommand{\resumeProjectListEnd}{\end{itemize} 
+                                   \end{minipage}}
+\newcommand{\resumeProjectItem}[1]{
+    \item\small{#1}
+    }
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%----------HEADING-----------------
+\begin{center}
+  \begin{minipage}{0.97\textwidth}
+      \begin{minipage}[c]{0.6\linewidth}
+          \huge \textbf{Hugo \textsc{Jarkoff}}
+          \\
+          \emph{\large{Machine Learning Software Engineer (MSc.)}}
+      \end{minipage}
+      \hfill
+      \begin{minipage}[c]{0.215\linewidth}
+          \begin{tabular*}{\textwidth}{c@{\extracolsep{\fill}} l}
+              \href{mailto:hugo.jarkoff@gmail.com}{\raisebox{-0.055\height}{\faEnvelope}} & \href{mailto:hugo.jarkoff@gmail.com}{\small{hugo.jarkoff@gmail.com}} \\
+              \href{https://github.com/hugojarkoff}{\raisebox{-0.035\height}{\faGlobe}} & \href{https://hugojarkoff.github.io/}{\small{hugojarkoff.github.io}} \\
+              \href{https://github.com/hugojarkoff}{\raisebox{-0.035\height}{\faGithub}} & \href{https://github.com/hugojarkoff}{\small{hugojarkoff}} \\
+              \href{https://www.linkedin.com/in/hugojarkoff/}{\raisebox{-0.0925\height}{\faLinkedinSquare}} & \href{https://www.linkedin.com/in/hugojarkoff/}{\small{in/hugojarkoff}} \\
+              {\raisebox{-0.0925\height}{\faHome}} & \small{Fontainebleau, France}
+          \end{tabular*}
+      \end{minipage}
+  \end{minipage}
+  \end{center}
+
+
+%------------PROJET-----------------------
+\vspace{0.2mm}
+
+\begin{center}
+\begin{minipage}{0.875\textwidth}
+    \centering
+    \large \textbf{ML Software Engineer with 4\Plus \ years of experience in 
+    designing, training and deploying ML/CV models at scale, with an emphasis on Research \& MLOps practices.}
+\end{minipage}
+\end{center}
+
+\vspace{-4mm}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+
+\resumeSubHeadingListStart
+
+\vspace{0.75mm}
+
+
+\resumeSubheading{NamR}{Paris, France}{ML/CV Software Engineer}{2024 - present}
+\resumeProjectListStart
+\resumeProjectItem{Various high-impact contributions to the team's training and inference pipelines, promoting good software practices (OOP, Design Patterns, CI/CD).}
+\resumeProjectListEnd
+
+\resumeSubheading{Invoxia}{Paris, France}{R\&D Machine Learning Engineer}{2021 -- 2024 (3 years)}
+
+Several projects led successively : 
+\resumeProjectListStart
+\resumeProjectItem{Development and training of a CV model for human detection and counting using high frequency radar waves.}
+\resumeProjectItem{Development and training of a signal processing (CV approach) model for estimation of the respiratory rate of dogs using accelerometer signals from a connected medical collar.
+Average model accuracy exceeding 98.5\% (preprint available on \href{https://www.biorxiv.org/content/10.1101/2023.06.09.544347v1}{\emph{bioRxiv}}).}
+\resumeProjectItem{Research on neural networks architectures: reviewing scientific literature, adapting and modifying existing models (CNNs, Vision Transformers), research on model compression for embedded deployment in the collar.}
+\resumeProjectItem{Contributions to the team's model training pipeline: rapid detection and correction of outlier data, code refactoring for high performance data preprocessing.}
+\resumeProjectItem{Deployment of the collar's models in production to more than 10k users (and growing) using Kubernetes and AWS SageMaker. Real-time performance monitoring of the cluster using Grafana and Prometheus, identifying improvements in the deployment.}
+\resumeProjectListEnd
+
+\resumeSubheading{Institut Louis Bachelier}{Paris, France}{End-of-Studies Internship}{2020 (6 months)}
+\resumeProjectListStart
+\resumeProjectItem{Research project on online learning for training recurrent neural networks.}
+\resumeProjectListEnd
+
+\resumeSubheading{Sopra Steria (for NavBlue - Airbus)}{Toulouse, France}{End-of-Studies Team Project}{2019 -- 2020}
+\resumeProjectListStart
+\resumeProjectItem{Automatic segmentation and classification of airport images using fully convolutional neural networks (UNet).}
+\resumeProjectListEnd
+
+% \resumeSubheading{Safran Aircraft Engines}{Villaroche, France}{Engineering Internship in Aero-Mechanical Optimization}{2018 (6 months)}
+% \resumeProjectListStart
+% \resumeProjectItem{Development of a new method for parameterizing engine blades based on a Bézier surfaces representation. Development and implementation of Python scripts for aero-mechanical optimization workflows.}
+% \resumeProjectListEnd
+
+\resumeSubHeadingListEnd
+
+
+\vspace{-4.5mm}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\vspace{0.75mm}
+
+
+\resumeSubheading{ISAE-SUPAERO}{Toulouse, France}{Engineering Degree (MSc.)}{2016 -- 2020}
+\resumeProjectListStart
+\resumeProjectItem{\textit{Major in Machine Learning}: Deep Learning (Computer Vision, NLP), Reinforcement Learning, MLOps practices (database architectures, Docker containerization, cloud computing).}
+\resumeProjectItem{\textit{Minor in Advanced Mathematics}: Advanced statistics (non-parametric estimation, Bayesian statistics, stochastic algorithms) - High-performance and parallel computing - Modeling and analysis of multiphysics systems - Optimization.}
+\resumeProjectListEnd
+
+\resumeSubheading{Lycée Louis-le-Grand}{Paris, France}{Preparatory Classes}{2014 -- 2016}
+\resumeProjectListStart
+\resumeProjectItem{\textit{PCSI - PC*}: Mathematics - Physics - Chemistry - Computer Science.}
+\resumeProjectListEnd
+
+\resumeSubHeadingListEnd
+
+
+\vspace{-3mm}
+
+%-----------COMPETENCES TECHNIQUES + LANGUES -----------------
+\begin{minipage}[t]{0.6\linewidth}
+    \section{Technical skills}
+    % Non exhaustive technical skills acquired during my professional and personal projects:
+    \resumeSubHeadingListStart
+    \resumeSubItem{Programming languages}{Python (OOP, Design Patterns), C, HTML/JS.}
+    \resumeSubItem{Deep Learning frameworks}{PyTorch, Tensorflow, Keras.}
+    \resumeSubItem{MLOps\,/\,DevOps}{Docker, Kubernetes, Flask, MongoDB, Wandb, ClearML.}
+    \resumeSubItem{Computer Vision}{OpenCV, scikit-image.}
+    \resumeSubItem{Cloud Computing}{AWS, GCP.}
+    \resumeSubHeadingListEnd
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.37\linewidth}
+    \section{Languages}
+    \resumeSubHeadingListStart
+    \resumeSubItem{French}{Native language.}
+    \resumeSubItem{English}{Full professional proficiency. \\ \emph{TOEFL ITP}: 633/677.}
+    \resumeSubHeadingListEnd
+\end{minipage}
+
+
+% \vspace{0.5mm}
+
+%-----------PROJECTS-----------------
+\section{Personal Projects and Diverse Interests}
+\vspace{0.5mm}
+\begin{minipage}[t]{0.9865\textwidth}
+\resumeSubHeadingListStart
+\resumeSubItem{Language Models Training}{RapGPT: Personal project consisting in training (from scratch) a Transformers-based language model to generate French Rap lyrics. 
+Demo running on \href{https://huggingface.co/spaces/hugojarkoff/rapGPT}{HF}; weights also on \href{https://huggingface.co/hugojarkoff/rapGPT}{HF}; training code on \href{https://github.com/hugojarkoff/rapGPT}{GitHub}.}
+\resumeSubItem{Generative Models Finetuning}{Finetuning of several pretrained models, including Segment Anything and Stable Diffusion, by using adapters (LoRAs, IP-Adapter) on target layers; lecture of scientific articles, keeping up with the latest advancements in the field.}
+\resumeSubItem{Rock Climbing / Mountaineering}{Experienced climber and mountaineer (over 15 years of practice).}
+\resumeSubHeadingListEnd
+\end{minipage}
+
+
+
+
+
+
+
+%-------------------------------------------
+\end{document}
