@@ -36,7 +36,7 @@
 \renewcommand{\footrulewidth}{0pt}
 
 \usepackage{geometry}
-\geometry{top=0.5cm, bottom=0.5cm, left=0.5cm, right=0.5cm}
+\geometry{top=0.3cm, bottom=0.5cm, left=0.4cm, right=0.4cm}
 
 \urlstyle{same}
 
@@ -122,7 +122,7 @@
 
 
 %------------PROJET-----------------------
-\vspace{0.2mm}
+% \vspace{0.2mm}
 
 \begin{center}
 \begin{minipage}{0.875\textwidth}
@@ -144,32 +144,32 @@
 
 \resumeSubheading{Addactis (formerly NamR, acquired in 2025)}{Paris, France}{ML/CV Software Engineer, focused on aerial imagery processing}{2024 - present}
 
-Various high-impact contributions to the team's technical stack, promoting modern Python practices:
+High-impact contributions to the team's ML and software infrastructure:
 \resumeProjectListStart
-\resumeProjectItem{Refactor of the team's training framework, drastically reducing time needed between data acquisition and model release to production.}
-\resumeProjectItem{Ongoing refactor of the team's DB and aerial imagery processing pipelines.}
+\resumeProjectItem{Refactored the training framework, reducing time from data acquisition to production release by over 50\%.}
+\resumeProjectItem{Redesigned aerial imagery processing pipelines with serverless Cloud Run deployments, cutting legacy codebase size and reducing data integration time for ML workflows.}
+\resumeProjectItem{Optimized ML inference with PyTriton on serverless GPUs, reducing inference costs by enabling autoscaling to zero.}
 \resumeProjectListEnd
 
-\resumeSubheading{Invoxia}{Paris, France}{R\&D Machine Learning Engineer}{2021 -- 2024 (3 years)}
+\resumeSubheading{Invoxia}{Paris, France}{R\&D Machine Learning Engineer}{2021 -- 2024}
 
-Several projects led successively : 
+Led multiple end-to-end ML projects from research to deployment:
 \resumeProjectListStart
-\resumeProjectItem{Development and training of a CV model for human detection and counting using high frequency radar waves.}
-\resumeProjectItem{Development and training of a signal processing (CV approach) model for estimation of the respiratory rate of dogs using accelerometer signals from a connected medical collar.
-Average model accuracy exceeding 98.5\% (preprint available on \href{https://www.biorxiv.org/content/10.1101/2023.06.09.544347v1}{\emph{bioRxiv}}).}
-\resumeProjectItem{Research on neural networks architectures: reviewing scientific literature, adapting and modifying existing models (CNNs, Vision Transformers), research on model compression for embedded deployment in the collar.}
-\resumeProjectItem{Contributions to the team's model training pipeline: rapid detection and correction of outlier data, code refactoring for high performance data preprocessing.}
-\resumeProjectItem{Deployment of the collar's models in production to more than 10k users (and growing) using Kubernetes and AWS SageMaker. Real-time performance monitoring of the cluster using Grafana and Prometheus, identifying improvements in the deployment.}
+\resumeProjectItem{Developed and trained a CV model for human detection and counting using high-frequency radar waves.}
+\resumeProjectItem{Designed a CV-based signal processing model to estimate canine respiratory rate from accelerometer data; achieved 98.5\% accuracy (\href{https://www.biorxiv.org/content/10.1101/2023.06.09.544347v1}{preprint available}).}
+\resumeProjectItem{Researched and adapted neural architectures (CNNs, Vision Transformers), focusing on model compression for embedded deployment.}
+\resumeProjectItem{Improved model training pipeline with robust outlier detection and high-performance data preprocessing.}
+\resumeProjectItem{Deployed ML models to 10k+ production devices via Kubernetes and AWS SageMaker, with real-time monitoring (Grafana, Prometheus) and iterative optimizations.}
 \resumeProjectListEnd
 
 \resumeSubheading{Institut Louis Bachelier}{Paris, France}{End-of-Studies Internship}{2020 (6 months)}
 \resumeProjectListStart
-\resumeProjectItem{Research project on online learning for training recurrent neural networks.}
+\resumeProjectItem{Researched online learning methods for training recurrent neural networks.}
 \resumeProjectListEnd
 
 \resumeSubheading{Sopra Steria (for NavBlue - Airbus)}{Toulouse, France}{End-of-Studies Team Project}{2019 -- 2020}
 \resumeProjectListStart
-\resumeProjectItem{Automatic segmentation and classification of airport images using fully convolutional neural networks (UNet).}
+\resumeProjectItem{Developed an airport image segmentation and classification system using fully convolutional neural networks (UNet).}
 \resumeProjectListEnd
 
 % \resumeSubheading{Safran Aircraft Engines}{Villaroche, France}{Engineering Internship in Aero-Mechanical Optimization}{2018 (6 months)}
@@ -180,7 +180,7 @@ Average model accuracy exceeding 98.5\% (preprint available on \href{https://www
 \resumeSubHeadingListEnd
 
 
-\vspace{-4.5mm}
+\vspace{-5mm}
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -202,20 +202,19 @@ Average model accuracy exceeding 98.5\% (preprint available on \href{https://www
 \resumeSubHeadingListEnd
 
 
-\vspace{-3mm}
+\vspace{-4mm}
 
 %-----------COMPETENCES TECHNIQUES + LANGUES -----------------
 \begin{minipage}[t]{0.65\linewidth}
-    \section{Technical skills}
-    % Non exhaustive technical skills acquired during my professional and personal projects:
+    \section{Technical Skills}
     \resumeSubHeadingListStart
-    \resumeSubItem{Programming}{Python as main language: OOP, Design Patterns, async API programming (FastAPI) ...; basic shell scripting; notions of C / C\Plus\Plus / Java / Lua (Neovim).}
-    \resumeSubItem{Deep Learning frameworks}{PyTorch, Tensorflow, Keras.}
-    \resumeSubItem{Infra/DevOps}{Docker, Terraform, Kubernetes, PostgreSQL/PostGIS, Gitlab CI/CD.}
-    \resumeSubItem{MLOps}{NVIDIA Triton, Wandb, ClearML.}
-    \resumeSubItem{Cloud Providers}{GCP, AWS.}
+    \resumeSubItem{Programming}{Python (OOP, design patterns, async APIs with FastAPI); Shell scripting; Familiar with C, C\Plus\Plus, Java, Lua (Neovim).}
+    \resumeSubItem{Deep Learning}{PyTorch, TensorFlow, Keras.}
+    \resumeSubItem{MLOps \& Infrastructure}{Docker, Kubernetes, Terraform, GitLab CI/CD, NVIDIA Triton, WandB, ClearML.}
+    \resumeSubItem{Databases}{PostgreSQL, PostGIS.}
+    \resumeSubItem{Cloud Platforms}{Google Cloud Platform (GCP), Amazon Web Services (AWS).}
     \resumeSubHeadingListEnd
-\end{minipage}
+    \end{minipage}
 \hfill
 \begin{minipage}[t]{0.3\linewidth}
     \section{Languages}
